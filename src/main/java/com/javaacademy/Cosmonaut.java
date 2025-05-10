@@ -1,8 +1,11 @@
 package com.javaacademy;
 
+import lombok.ToString;
+
 /**
  * Космонавт
  */
+@ToString
 public class Cosmonaut {
     //Имя космонавта
     private final String name;

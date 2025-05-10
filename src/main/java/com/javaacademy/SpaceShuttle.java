@@ -2,6 +2,8 @@ package com.javaacademy;
 
 import com.javaacademy.details.Rocket;
 import com.javaacademy.details.Capsule;
+import com.javaacademy.exceptions.CosmonautIsNotReadyException;
+import lombok.SneakyThrows;
 
 /**
  * Космический корабль
@@ -30,7 +32,11 @@ public class SpaceShuttle {
     /**
      * Запуск шаттла
      */
+    @SneakyThrows
     public void run() {
+        if (!capsule.getCosmonaut().isHealthy()) {
+            throw new CosmonautIsNotReadyException("Космонавт болен, запуск отменён.");
+        }
         capsule.getCosmonaut().phrase();
     }
 

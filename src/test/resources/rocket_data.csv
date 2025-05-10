@@ -1,5 +1,5 @@
 number_experiment;fuel_stage_one;fuel_stage_two;fuel_stage_three;result
-1;100000;20000;5000;false
-2;80000;20000;90000;false
-3;90000;85000;70000;true
-4;80000;70000;5000;false
+1;100_000;20_000;5_000;false
+2;80_000;20_000;90_000;false
+3;90_000;85_000;70_000;true
+4;80_000;70_000;5_000;false

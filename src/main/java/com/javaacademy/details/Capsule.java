@@ -13,7 +13,7 @@ public class Capsule {
     private LifeCycleSystem lifeCycleSystem;
 
     public Capsule(Water water, JamTube jamTube, OxygenBalloon oxygenBalloon) {
-        this.lifeCycleSystem = new LifeCycleSystem(water, jamTube);
+        this.lifeCycleSystem = new LifeCycleSystem(water, jamTube, oxygenBalloon);
     }
 
     public Cosmonaut getCosmonaut() {
@@ -21,7 +21,7 @@ public class Capsule {
     }
 
     public void setCosmonaut(Cosmonaut cosmonaut) {
-        cosmonaut.setHealthy(false);
+        //cosmonaut.setHealthy(false);
         this.cosmonaut = cosmonaut;
     }
 

@@ -14,6 +14,7 @@ public class Rocket {
     public Rocket(double fuelStageOne, double fuelStageTwo, double fuelStageThree) {
         this.firstStage = new Engine(fuelStageOne);
         this.secondStage = new Engine(fuelStageTwo);
+        this.thirdStage = new Engine(fuelStageThree);
     }
 
     /**
